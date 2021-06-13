@@ -1,2 +1,2 @@
 # MySlackApp
-Bot App
+Bot Apps
