@@ -1,0 +1,20 @@
+service: Bot-app
+provider:
+  name: aws
+  runtine: nodejs14.x
+  region: us-east-1
+  role: arn:aws:iam::234983197403:user/Bot
+  timeout: 0
+  stage: ${opt:stage, 'dev'}
+  memorySize: 128
+functions:
+  dispatcher:
+    handler: bot.run
+    description: description
+    exclude:
+      - package-lock.json
+    optimize: true
+    events:
+      - http:
+          path: "/events"
+          method: post

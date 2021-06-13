@@ -1,0 +1,17 @@
+{
+  "name": "botapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.0",
+    "nodemon": "^2.0.7",
+    "slackbots": "^1.2.0"
+  }
+}
